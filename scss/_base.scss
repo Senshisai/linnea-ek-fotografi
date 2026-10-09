@@ -1,7 +1,7 @@
 // Grundstilar för hela webbplatsen: bakgrund, text och typsnitt.
-@use "variables";
+@use "variables" as *;
 
 body {
-  background-color: variables.$background-color;
-  color: variables.$text-color;
+  background-color: $background-color;
+  color: $text-color;
 }

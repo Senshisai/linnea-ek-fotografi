@@ -1,4 +1,31 @@
 body {
   background-color: #ffffff;
   color: #111111;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 2px solid #e5e5e5;
+}
+header nav {
+  display: none;
+}
+header .title-name {
+  text-decoration: none;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 26px;
+  color: #111111;
+}
+header .title-name span {
+  font-style: italic;
+}
+header .menu-button {
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  background: #ffffff;
+  border: #111111 2px solid;
 }/*# sourceMappingURL=style.css.map */
