@@ -5,3 +5,66 @@ body {
   background-color: variables.$background-color;
   color: variables.$text-color;
 }
+
+/*header och navigering */
+
+.site-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid variables.$border-color;
+}
+
+.mobile-menu {
+    position: relative;
+
+    summary {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100px;
+        background-color: variables.$background-color;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: variables.$text-color;
+            font-family: variables.$body-font;
+            font-size: 16px;
+        }
+    }
+}
+
+.logo {
+    text-decoration: none;
+    color: variables.$text-color;
+    font-family: variables.$heading-font;
+    font-size: 24px;
+    font-weight: 500;
+}
