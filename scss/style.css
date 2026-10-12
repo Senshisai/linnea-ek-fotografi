@@ -58,6 +58,37 @@ body {
   font-weight: 500;
 }
 
+.desktop-menu {
+  display: none;
+}
+.desktop-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.desktop-menu a {
+  text-decoration: none;
+  color: #111111;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+.desktop-menu a[aria-current=page] {
+  color: #7a5c3e;
+  font-weight: 700;
+  border-bottom: 2px solid #7a5c3e;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+  }
+}
 .contact {
   background: gray;
 }

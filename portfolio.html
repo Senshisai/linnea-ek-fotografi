@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/portfolio.css">
 </head>
 <body>
     <header class="site-header">
@@ -32,12 +33,76 @@
                 </ul>
             </nav>
         </details>
+
+        <nav class="desktop-menu" aria-label="Desktopnavigation">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="tjanster.html">Tjänster</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section class="portfolio">
                 <h1>Portfolio</h1>
                 <p>Ett urval av uppdrag och egna projekt, 2022-2026.</p>
+
+                <div class="portfolio-kategorier">
+                    <button type="button">Alla</button>
+                    <button type="button">Bröllop</button>
+                    <button type="button">Porträtt</button>
+                    <button type="button">Natur</button>
+                </div>
+
+                <div class="portfolio-galleri">
+                    <figure id="bild-1">
+                        <img src="image/anna-jonas.jpg" alt="Anna och Jonas, Åre 2025">
+                        <figcaption>Anna & Jonas, Åre 2025</figcaption>
+                    </figure>
+
+                    <figure id="bild-2">
+                        <img src="image/morgondimma.jpg" alt="Morgon dimma över en sjö">
+                        <figcaption>Morgondimma, Storsjön</figcaption>
+                    </figure>
+
+                    <figure id="bild-3">
+                        <img src="image/familjen-nilsson.jpg" alt="Nilsson familjen som sitter tillsammans">
+                        <figcaption>Familjen Nilsson, hemma</figcaption>
+                    </figure>
+
+                    <figure id="bild-4">
+                        <img src="image/fjallrav.jpg" alt="Fjällräv i ett snötäckt landskap">
+                        <figcaption>Fjällräv i snö</figcaption>
+                    </figure>
+
+                    <figure id="bild-5">
+                        <img src="image/sara-foretagsportratt.jpg" alt="Porträtt av Sara">
+                        <figcaption>Sara, företagsporträtt</figcaption>
+                    </figure>
+
+                    <figure id="bild-6">
+                        <img src="image/mira-leo.jpg" alt="Bröllopspar vid kusten">
+                        <figcaption>Mira & Leo, Kustbröllop 2024</figcaption>
+                    </figure>
+
+                    <figure id="bild-7">
+                        <img src="image/midnattssol.jpg" alt="Midnattssol över fjällandskap">
+                        <figcaption>Midnattssol, Abisko</figcaption>
+                    </figure>
+
+                    <figure id="bild-8">
+                        <img src="image/morfar-barnbarn.jpg" alt="Morfar tillsammans med sitt barnbarn">
+                        <figcaption>Morfar och barnbarn</figcaption>
+                    </figure>
+
+                    <figure id="bild-9">
+                        <img src="image/hostskog.jpg" alt="Skog med höstfärgade träd">
+                        <figcaption>Höstskog, Höga kusten</figcaption>
+                    </figure>
+                </div>
         </section>
     </main>
 </body>
