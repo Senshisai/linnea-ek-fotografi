@@ -89,6 +89,34 @@ body {
     display: block;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+  padding: 40px 20px;
+  border-top: 1px solid #e5e5e5;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 12px;
+}
+.footer p {
+  margin: 0;
+}
+.footer .footer-links {
+  display: flex;
+  gap: 16px;
+}
+.footer .footer-links a {
+  color: #111111;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+}
 .contact {
   background: gray;
 }
@@ -101,4 +129,201 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: blue;
+}
+
+.desktop-text {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 20px 20px;
+}
+.hero h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 12px;
+}
+.hero p {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+.hero a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px 30px;
+}
+
+.gallery-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.image-one {
+  height: 350px;
+  background-color: #cec7bb;
+}
+
+.gallery-middle {
+  display: flex;
+  gap: 10px;
+}
+
+.image-two {
+  flex: 1;
+  min-width: 0;
+  height: 170px;
+  background-color: #bfc3c3;
+}
+
+.image-three {
+  flex: 1;
+  min-width: 0;
+  height: 170px;
+  background-color: #d9d4cc;
+}
+
+.image-four {
+  height: 350px;
+  background-color: #a9afab;
+}
+
+.services {
+  background-color: #f5f4f1;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+.services h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 0 24px;
+}
+.services h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+.services p {
+  font-size: 12px;
+  margin: 4px 0 16px;
+}
+.services a {
+  color: #111111;
+  font-size: 12px;
+}
+
+.about {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-text {
+    display: inline;
+  }
+  .hero {
+    padding: 40px 20px 30px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero p {
+    max-width: 650px;
+    margin: 0 auto 16px;
+  }
+  .gallery {
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .image-one,
+  .image-four {
+    flex: 1;
+    min-width: 0;
+    height: 350px;
+  }
+  .gallery-middle {
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+  }
+  .image-two,
+  .image-three {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+  }
+  .services {
+    padding: 40px 20px;
+  }
+  .services .services-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .services .services-list div {
+    flex: 1;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 300px;
+    background-color: #d9d4cc;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 12px;
+  }
+  .about-text {
+    flex: 1;
+    font-family: "DM Sans", Arial, sans-serif;
+  }
+  .about-text h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+  }
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .about-text a {
+    color: #111111;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
