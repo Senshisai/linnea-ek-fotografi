@@ -6,3 +6,7 @@ Responsiv och tillgänglig webbplats för Linnea Ek Fotografi. Grupparbete i HTM
 - Saya – Startsida
 - Flavius – 
 - Nathalie – 
+
+## Webbplats
+
+[Linnea Ek Fotografi – besök webbplatsen](https://senshisai.github.io/linnea-ek-fotografi/)

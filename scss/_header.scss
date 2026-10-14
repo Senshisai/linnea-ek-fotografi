@@ -28,3 +28,29 @@ header {
     border: $text-color 2px solid;
   }
 }
+
+@media (min-width: 768px) {
+header {
+    nav {
+      display: block;
+      ul {
+        display: flex;
+        gap: 20px;
+        
+        li {
+          a {
+            text-decoration: none;
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+  }
+.menu-button {
+    display: none;
+  }
+
+}
