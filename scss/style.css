@@ -3,48 +3,102 @@ body {
   color: #111111;
 }
 
-header {
+.site-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mobile-menu {
+  position: relative;
+}
+.mobile-menu summary {
+  cursor: pointer;
+  list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 16px;
-  border-bottom: 2px solid #e5e5e5;
 }
-header nav {
+.mobile-menu summary svg {
+  width: 24px;
+  height: 24px;
+}
+.mobile-menu nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100px;
+  background-color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-menu ul li {
+  margin-bottom: 15px;
+}
+.mobile-menu ul a {
+  text-decoration: none;
+  color: #111111;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #111111;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.desktop-menu {
   display: none;
 }
-header .title-name {
+.desktop-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.desktop-menu a {
   text-decoration: none;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 26px;
   color: #111111;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
 }
-header .title-name span {
-  font-style: italic;
-}
-header .menu-button {
-  font-size: 24px;
-  height: 50px;
-  width: 50px;
-  background: #ffffff;
-  border: #111111 2px solid;
+.desktop-menu a[aria-current=page] {
+  color: #7a5c3e;
+  font-weight: 700;
+  border-bottom: 2px solid #7a5c3e;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  header nav {
-    display: block;
-  }
-  header nav ul {
-    display: flex;
-    gap: 20px;
-  }
-  header nav ul li a {
-    text-decoration: none;
-    color: #111111;
-    font-family: "DM Sans", Arial, sans-serif;
-    font-size: 18px;
-  }
-  .menu-button {
+  .mobile-menu {
     display: none;
   }
+  .desktop-menu {
+    display: block;
+  }
+}
+.contact {
+  background: gray;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
