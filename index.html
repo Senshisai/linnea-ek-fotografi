@@ -11,26 +11,132 @@
 </head>
 
 <body>
-<header>
-  <a href="index.html">Linnea Ek Fotografi</a>
+<header class="site-header">
+        <a href="index.html" class="logo">
+            Linnea Ek <em>Fotografi</em>
+        </a>
 
-  <nav aria-label="Huvudnavigation">
-    <ul>
-      <li><a href="index.html" aria-current="page">Start</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="om-mig.html">Om mig</a></li>
-      <li><a href="tjanster.html">Tjänster</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
+        <details class="mobile-menu">
+                <summary aria-label="Öppna navigationsmenyn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </summary>
+
+            <nav aria-label="Mobilnavigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Start</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="om-mig.html">Om mig</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </details>
+
+        <nav class="desktop-menu" aria-label="Desktopnavigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Start</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="tjanster.html">Tjänster</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
 
 <main>
+    <section class="hero">
+        <h1>Bilder som stannar kvar</h1>
 
+        <p>
+            Bröllops-, porträtt- och naturfotograf
+            <span class="desktop-text">med bas </span>i Norrland.
+            <span class="desktop-text">
+                Jag fångar ljuset, människorna och det som händer mellan bilderna.
+            </span>
+        </p>
+
+        <a href="portfolio.html">SE PORTFOLION</a>
+    </section>
+
+    <section class="gallery" aria-label="Utvalda fotografier">
+        <div class="gallery-image image-one">
+            [Bild: brudpar på fjällsluttning]
+        </div>
+
+        <div class="gallery-middle">
+            <div class="gallery-image image-two">
+                [Bild: porträtt i fönsterljus]
+            </div>
+
+            <div class="gallery-image image-three">
+                [Bild: dimma över sjö]
+            </div>
+        </div>
+
+        <div class="gallery-image image-four">
+            [Bild: barn som springer i äng]
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Vad kan jag hjälpa dig med?</h2>
+
+        <div class="services-list">
+            <div>
+                <h3>Bröllop</h3>
+                <p>Hela dagen, från förberedelser till första dansen.</p>
+            </div>
+
+            <div>
+                <h3>Porträtt</h3>
+                <p>
+                    Familj, par och företag<span class="desktop-text">sporträtt i studio eller ute</span>.
+                </p>
+            </div>
+
+            <div>
+                <h3>Natur</h3>
+                <p>
+                    Tryck och licenser<span class="desktop-text"> för bilder från Norrlands fjäll och skogar</span>.
+                </p>
+            </div>
+        </div>
+
+        <a href="tjanster.html">TJÄNSTER OCH PRISER</a>
+    </section>
+
+    <section class="about">
+        <div class="about-image">
+            [Porträtt: Linnea med kamera]
+        </div>
+
+        <div class="about-text">
+            <h2>Hej, jag heter Linnea</h2>
+
+            <p>
+                Jag har fotograferat i tolv år och tror på bilder
+                utan stress och uppställda poser. Det bästa<br>
+                ögonblicket är ofta det ingen planerade.
+            </p>
+
+            <a href="om-mig.html">MER OM MIG</a>
+        </div>
+    </section>
 </main>
 
-<footer>
 
+<footer class="footer">
+    <p>© 2026 Linnea Ek Fotografi</p>
+
+    <div class="footer-links">
+        <a href="mailto:hej@linneaek.se">hej@linneaek.se</a>
+        <a href="#">Instagram</a>
+    </div>
 </footer>
+
 </body>
 </html>
