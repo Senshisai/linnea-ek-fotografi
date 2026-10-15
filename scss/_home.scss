@@ -1,0 +1,277 @@
+
+@use "variables" as *;
+
+// Mixin för rubriker
+@mixin heading {
+    font-family: $heading-font;
+    font-weight: 500;
+}
+
+// Mobile First
+
+.desktop-text {
+    display: none;
+}
+
+// Hero
+.hero {
+    text-align: center;
+    padding: 30px 20px 20px;
+
+    h1 {
+        @include heading;
+        font-size: 36px;
+        line-height: 1;
+        margin: 0 0 12px;
+    }
+
+    p {
+        font-family: $body-font;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 16px;
+    }
+
+    a {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: $text-color;
+        color: $background-color;
+        font-family: $body-font;
+        font-size: 12px;
+        text-decoration: none;
+    }
+}
+
+// Gallery
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px 30px;
+}
+
+.gallery-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-family: $body-font;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.image-one {
+    height: 350px;
+    background-color: #cec7bb;
+}
+
+.gallery-middle {
+    display: flex;
+    gap: 10px;
+}
+
+.image-two {
+    flex: 1;
+    min-width: 0;
+    height: 170px;
+    background-color: #bfc3c3;
+}
+
+.image-three {
+    flex: 1;
+    min-width: 0;
+    height: 170px;
+    background-color: $image-color;
+}
+
+.image-four {
+    height: 350px;
+    background-color: #a9afab;
+}
+
+// Services
+.services {
+    background-color: #f5f4f1;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: $body-font;
+
+    h2 {
+        @include heading;
+        font-size: 30px;
+        line-height: 1;
+        margin: 0 0 24px;
+    }
+
+    h3 {
+        @include heading;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 4px 0 16px;
+    }
+
+    a {
+        color: $text-color;
+        font-size: 12px;
+    }
+}
+
+// About
+.about {
+    display: none;
+}
+
+// Desktop
+@media (min-width: 768px) {
+
+    .desktop-text {
+        display: inline;
+    }
+
+    .hero {
+        padding: 40px 20px 30px;
+
+        h1 {
+            font-size: 48px;
+        }
+
+        p {
+            max-width: 650px;
+            margin: 0 auto 16px;
+        }
+    }
+
+    .gallery {
+        flex-direction: row;
+        gap: 15px;
+        padding: 0 20px 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .image-one,
+    .image-four {
+        flex: 1;
+        min-width: 0;
+        height: 350px;
+    }
+
+    .gallery-middle {
+        flex: 1;
+        min-width: 0;
+        flex-direction: column;
+    }
+
+    .image-two,
+    .image-three {
+        flex: 1;
+        min-height: 0;
+        height: auto;
+    }
+
+    .services {
+        padding: 40px 20px;
+
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+
+            div {
+                flex: 1;
+            }
+        }
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .about-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        height: 300px;
+        background-color: $image-color;
+        font-family: $body-font;
+        font-size: 12px;
+    }
+
+    .about-text {
+        flex: 1;
+        font-family: $body-font;
+
+        h2 {
+            @include heading;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: $text-color;
+            font-size: 12px;
+        }
+    }
+}
+
+// Large desktop
+@media (min-width: 1200px) {
+
+    .hero {
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            max-width: 800px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .gallery {
+        gap: 20px;
+        padding: 0 30px 60px;
+    }
+
+    .gallery-middle {
+        gap: 20px;
+    }
+
+    .image-one,
+    .image-four {
+        height: 450px;
+    }
+
+    .about-image {
+        width: 45%;
+        height: 400px;
+        font-size: 18px;
+    }
+
+    .about-text {
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+}
