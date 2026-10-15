@@ -64,7 +64,6 @@
 .studio-picture img {
   display: block;
   width: 100%;
-  height: 16rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
