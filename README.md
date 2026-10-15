@@ -5,7 +5,7 @@ Responsiv och tillgänglig webbplats för Linnea Ek Fotografi. Grupparbete i HTM
 ## Gruppmedlemmar och ansvar
 - Saya – Startsida
 - Flavius – Portfolio
-- Nathalie – 
+- Nathalie – Kontakt
 
 ## Webbplats
 

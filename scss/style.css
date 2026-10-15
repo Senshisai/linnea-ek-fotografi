@@ -1,6 +1,14 @@
 body {
   background-color: #ffffff;
   color: #111111;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .site-header {
@@ -325,5 +333,36 @@ body {
   .about-text a {
     color: #111111;
     font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero p {
+    max-width: 800px;
+    margin-bottom: 24px;
+  }
+  .gallery {
+    gap: 20px;
+    padding: 0 30px 60px;
+  }
+  .gallery-middle {
+    gap: 20px;
+  }
+  .image-one,
+  .image-four {
+    height: 450px;
+  }
+  .about-image {
+    width: 45%;
+    height: 400px;
+    font-size: 18px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about-text a {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
