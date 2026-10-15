@@ -126,12 +126,41 @@ main {
   }
 }
 .contact {
-  background: gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 1.25rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact p {
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #444444;
 }
 .contact__info {
+  min-width: 0;
+}
+.contact__info h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  color: #111111;
+}
+
+.contact-intro {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+
+.contact-details {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 .contact__text {
   font-size: 1.2rem;

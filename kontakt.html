@@ -11,37 +11,141 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=DM+Sans:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
-    <link rel="import" href="/image/studio2.jpg">
+    <link rel="stylesheet" href="scss/contact.css">
 </head>
 
-<body>
-    <main class="contact">
-        <section class="contact">
-            <div class="contact__info">
-                <h1>Kontakt</h1>
-                <p>Berätta om ert datum och vad ni drömmer om. Jag svarar inom två arbetsdagar.</p>
 
-                <!-- VÄNSTER SIDA - KONTAKT-->
-                <div class="contact__list">
-                    <div class="contact__info">
-                        <p class="contact__text">E-POST</p>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            Linnea Ek <em>Fotografi</em>
+        </a>
+
+        <details class="mobile-menu">
+            <summary aria-label="Öppna navigationsmenyn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </summary>
+
+            <nav aria-label="Mobilnavigation">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="om-mig.html">Om mig</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+                </ul>
+            </nav>
+        </details>
+
+        <nav class="desktop-menu" aria-label="Desktopnavigation">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="tjanster.html">Tjänster</a></li>
+                <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact" aria-labelledby="contact-title">
+
+            <div class="contact__info">
+                <h1 id="contact-title">Kontakt</h1>
+
+                <p class="contact-intro">
+                    Berätta om ert datum och vad ni drömmer om.
+                    Jag svarar inom två arbetsdagar.
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <p class="contact-label">E-POST</p>
                         <a href="mailto:hej@linneaek.se">hej@linneaek.se</a>
                     </div>
-                    <div class="contact__info">
-                        <p class="contact__text">TELEFON</p>
-                        <a href="tel:070-123 45 67">070-123 45 67</a>
+
+                    <div class="contact-item">
+                        <p class="contact-label">TELEFON</p>
+                        <a href="tel:+46701234567">070-123 45 67</a>
                     </div>
-                    <div class="contact__info">
-                        <p class="contact__text">STUDIO</p>
+
+                    <div class="contact-item">
+                        <p class="contact-label">STUDIO</p>
                         <p>Storgatan 12, Östersund</p>
                     </div>
-                    <div class="studio-picture">
-                        <img src="image/studio.jpg" alt="Bild: studion med fönsterljus" width="500" height="600" />
-                    </div>
+                </div>
+
+                <div class="studio-picture">
+                    <img src="image/studio.jpg" alt="Studion med naturligt fönsterljus">
                 </div>
             </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Namn *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">E-post *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="service">Typ av uppdrag *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Välj typ av uppdrag</option>
+                            <option value="brollop">Bröllop</option>
+                            <option value="portratt">Porträtt</option>
+                            <option value="familj">Familj</option>
+                            <option value="annat">Annat</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="date">Önskat datum</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="place">Plats</label>
+                    <input type="text" id="place" name="place">
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Berätta mer *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Skicka förfrågan
+                </button>
+
+                <p class="form-note">
+                    * Obligatoriskt fält.
+                </p>
+            </form>
+
         </section>
     </main>
-</body>
 
-</html>
+    <footer class="site-footer">
+        <p>© 2026 Linnea Ek Fotografi</p>
+
+        <div class="footer-links">
+            <a href="mailto:hej@linneaek.se">hej@linneaek.se</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </footer>
+
+</body>
