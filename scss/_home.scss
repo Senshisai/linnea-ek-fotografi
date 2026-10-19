@@ -243,13 +243,9 @@
 }
 
 // Large desktop
+
 @media (min-width: 1200px) {
-
     .hero {
-        h1 {
-            font-size: 40px;
-        }
-
         p {
             max-width: 800px;
             margin-bottom: 24px;

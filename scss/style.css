@@ -489,9 +489,6 @@ main {
   }
 }
 @media (min-width: 1200px) {
-  .hero h1 {
-    font-size: 40px;
-  }
   .hero p {
     max-width: 800px;
     margin-bottom: 24px;
@@ -650,11 +647,6 @@ main {
   }
   .steg-lista {
     flex-direction: row;
-  }
-}
-@media (min-width: 1200px) {
-  .tjanster-intro h1 {
-    font-size: 40px;
   }
 }
 .om-mig {
