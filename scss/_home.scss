@@ -6,7 +6,6 @@
     font-family: $heading-font;
     font-weight: 500;
 }
-
 // Mobile First
 
 // Hero
@@ -171,7 +170,7 @@
         padding: 40px 20px 30px;
 
         h1 {
-            font-size: 48px;
+            font-size: 40px;
         }
 
         p {
@@ -244,13 +243,9 @@
 }
 
 // Large desktop
+
 @media (min-width: 1200px) {
-
     .hero {
-        h1 {
-            font-size: 60px;
-        }
-
         p {
             max-width: 800px;
             margin-bottom: 24px;
