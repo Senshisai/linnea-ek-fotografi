@@ -284,10 +284,6 @@ main {
     padding: 4rem 3rem 5rem;
   }
 }
-.desktop-text {
-  display: none;
-}
-
 .hero {
   text-align: center;
   padding: 30px 20px 20px;
@@ -313,6 +309,10 @@ main {
   font-family: "DM Sans", Arial, sans-serif;
   font-size: 12px;
   text-decoration: none;
+}
+.hero a:focus-visible {
+  outline: 3px solid #7a5c3e;
+  outline-offset: 4px;
 }
 
 .gallery {
@@ -382,22 +382,51 @@ main {
   margin: 0;
 }
 .services p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 4px 0 16px;
 }
 .services a {
   color: #111111;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .about {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  background-color: #d9d4cc;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.about-text {
+  font-family: "DM Sans", Arial, sans-serif;
+}
+.about-text h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+}
+.about-text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.about-text a {
+  color: #111111;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
-  .desktop-text {
-    display: inline;
-  }
   .hero {
     padding: 40px 20px 30px;
   }
@@ -445,6 +474,7 @@ main {
   }
   .about {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 40px;
     padding: 40px 20px;
@@ -452,32 +482,11 @@ main {
     margin: 0 auto;
   }
   .about-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 35%;
     height: 300px;
-    background-color: #d9d4cc;
-    font-family: "DM Sans", Arial, sans-serif;
-    font-size: 12px;
   }
   .about-text {
     flex: 1;
-    font-family: "DM Sans", Arial, sans-serif;
-  }
-  .about-text h2 {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-weight: 500;
-    font-size: 32px;
-    margin: 0;
-  }
-  .about-text p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .about-text a {
-    color: #111111;
-    font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -500,7 +509,7 @@ main {
     height: 450px;
   }
   .about-image {
-    width: 45%;
+    width: 30%;
     height: 400px;
     font-size: 18px;
   }
@@ -509,5 +518,292 @@ main {
   }
   .about-text a {
     font-size: 16px;
+  }
+}
+.tjanster {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.tjanster-intro {
+  text-align: center;
+}
+.tjanster-intro h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.tjanster-intro p {
+  font-size: 14px;
+}
+
+.prislista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.pris-kort {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+.pris-kort h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+.pris-kort .pris {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.pris-kort ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 2;
+}
+.pris-kort a {
+  display: block;
+  margin-top: auto;
+  padding: 12px;
+  border: 1px solid #111111;
+  color: #111111;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+}
+.pris-kort a:focus-visible {
+  outline: 3px solid #7a5c3e;
+  outline-offset: 4px;
+}
+
+.popular {
+  border: 2px solid #111111;
+}
+.popular .etikett {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.popular a {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.process {
+  margin-top: 70px;
+}
+.process h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.steg-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.steg {
+  flex: 1;
+  min-width: 0;
+}
+.steg span {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  color: #7a5c3e;
+}
+.steg h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.steg p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+  .prislista {
+    flex-direction: row;
+  }
+  .steg-lista {
+    flex-direction: row;
+  }
+}
+.om-mig {
+  padding: 20px;
+}
+.om-mig .om-mig-bild img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.om-mig .om-mig-text h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 40px;
+}
+.om-mig .om-mig-text p {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+.om-mig .om-mig-text .citat {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 30px;
+}
+
+.min-resa {
+  padding: 20px;
+}
+.min-resa h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+}
+.min-resa .tidslinje {
+  list-style: none;
+  padding: 0;
+}
+.min-resa .tidslinje li {
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0;
+}
+.min-resa .tidslinje li p {
+  margin: 0;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+}
+.min-resa .tidslinje li .datum {
+  font-weight: 700;
+  min-width: 50px;
+}
+
+.kontakt {
+  background-color: #e5e5e5;
+  padding: 30px 20px;
+  margin: 20px;
+}
+.kontakt h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+}
+.kontakt a {
+  display: inline-block;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.kontakt a:focus-visible {
+  outline: 3px solid #7a5c3e;
+  outline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+  .om-mig {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .min-resa {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+  }
+  .kontakt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.portfolio {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.portfolio h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.portfolio p {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+}
+.portfolio .portfolio-kategorier {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio .portfolio-kategorier button {
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+.portfolio .portfolio-kategorier button:first-child {
+  background-color: #7a5c3e;
+  color: #ffffff;
+}
+.portfolio .portfolio-galleri {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.portfolio .portfolio-galleri figure {
+  margin: 0;
+}
+.portfolio .portfolio-galleri figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.portfolio .portfolio-galleri figure figcaption {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .portfolio .portfolio-galleri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1250px) {
+  .portfolio .portfolio-galleri {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
