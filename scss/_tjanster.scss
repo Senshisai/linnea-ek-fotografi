@@ -3,7 +3,6 @@
 
 // Mobile First
 
-
 .tjanster {
     width: 100%;
     box-sizing: border-box;
@@ -18,7 +17,7 @@
 
     h1 {
         font-family: $heading-font;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 500;
         margin: 0 0 10px;
     }
@@ -147,8 +146,10 @@
 }
 
 // Desktop
-
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+    .tjanster-intro h1 {
+        font-size: 40px;
+    }
 
     .prislista {
         flex-direction: row;
@@ -156,5 +157,12 @@
 
     .steg-lista {
         flex-direction: row;
+    }
+}
+
+// Large desktop
+@media (min-width: 1200px) {
+    .tjanster-intro h1 {
+        font-size: 40px;
     }
 }

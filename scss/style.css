@@ -430,7 +430,7 @@ main {
     padding: 40px 20px 30px;
   }
   .hero h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
   .hero p {
     max-width: 650px;
@@ -490,7 +490,7 @@ main {
 }
 @media (min-width: 1200px) {
   .hero h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .hero p {
     max-width: 800px;
@@ -533,7 +533,7 @@ main {
 }
 .tjanster-intro h1 {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0 0 10px;
 }
@@ -641,12 +641,20 @@ main {
   line-height: 1.5;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  .tjanster-intro h1 {
+    font-size: 40px;
+  }
   .prislista {
     flex-direction: row;
   }
   .steg-lista {
     flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .tjanster-intro h1 {
+    font-size: 40px;
   }
 }
 .om-mig {
