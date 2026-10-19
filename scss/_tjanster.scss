@@ -3,7 +3,10 @@
 
 // Mobile First
 
+
 .tjanster {
+    width: 100%;
+    box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px 60px;
@@ -73,9 +76,9 @@
         text-decoration: none;
         font-size: 12px;
 
-&:focus-visible {
-    outline: 3px solid $accent-color;
-    outline-offset: 4px;
+        &:focus-visible {
+        outline: 3px solid $accent-color;
+        outline-offset: 4px;
 }
 
     }
